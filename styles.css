@@ -1,51 +1,148 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif; /* Specify your preferred font */
-  background-color: #f5f5f5; /* Light gray background color */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
 }
 
-header {
-  background-color: #87CEFA; /* Light blue */
-  padding: 20px;
-  text-align: center;
+/* Navbar styles */
+.navbar {
+    background-color: #333;
 }
 
-header img {
-  width: 100px; /* Adjust the size as needed */
-  height: auto;
-  border-radius: 50%; /* To make the logo circular */
+.nav-link {
+    color: #fff;
 }
 
-header h1 {
-  margin-top: 10px;
-  color: #FFD700; /* Yellow text color */
+.nav-link:hover {
+    color: #ccc;
 }
 
-main {
-  text-align: center;
-  padding: 50px;
-  color: #333; /* Darker text color */
+/* Container styles */
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-main p {
-  margin: 0; /* Remove default margins */
+/* Welcome card styles */
+.welcome-card {
+    background-color: #444;
+    color: #fff;
 }
 
-.tierlist-button,
-.discord-button {
-  display: inline-block;
-  background-color: #7289DA; /* Discord color */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
+.welcome-text-col {
+    padding: 10px;
 }
 
-.tierlist-button:hover,
-.discord-button:hover {
-  background-color: #677BC4; /* Darker Discord color on hover */
+/* Post card styles */
+.post-card-large {
+    background-color: #444;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.post-card-img img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.post-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-card-content {
+    margin-bottom: 10px;
+}
+
+.post-card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-post-author {
+    font-style: italic;
+}
+
+.readtime {
+    font-style: italic;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-col {
+    margin-bottom: 20px;
+}
+
+.footer-text-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-link:hover {
+    color: #ccc;
+}
+
+/* Button styles */
+.btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-play {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+}
+
+.btn-play:hover {
+    background-color: #00796b;
+}
+
+/* Chatbox styles */
+.chatbox {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    .navbar-toggler:hover {
+        color: #ccc;
+    }
+
+    .nav-link {
+        color: #fff !important;
+    }
 }
