@@ -9,20 +9,20 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #1e1e1e;
-    color: #fff;
+    color: #ccc; /* Changed to cyan */
 }
 
 /* Navbar styles */
 .navbar {
-    background-color: #333;
+    background-color: #00cccc; /* Cyan */
 }
 
 .nav-link {
-    color: #fff;
+    color: #ccc; /* Cyan */
 }
 
 .nav-link:hover {
-    color: #ccc;
+    color: #fff; /* White */
 }
 
 /* Container styles */
@@ -34,7 +34,7 @@ body {
 /* Welcome card styles */
 .welcome-card {
     background-color: #444;
-    color: #fff;
+    color: #ccc; /* Cyan */
 }
 
 .welcome-text-col {
@@ -44,7 +44,7 @@ body {
 /* Post card styles */
 .post-card-large {
     background-color: #444;
-    color: #fff;
+    color: #ccc; /* Cyan */
     margin-bottom: 20px;
     border-radius: 5px;
 }
@@ -81,7 +81,7 @@ body {
 /* Footer styles */
 .footer {
     background-color: #333;
-    color: #fff;
+    color: #ccc; /* Cyan */
     padding: 20px 0;
 }
 
@@ -96,14 +96,14 @@ body {
 }
 
 .footer-link {
-    color: #fff;
+    color: #ccc; /* Cyan */
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
 }
 
 .footer-link:hover {
-    color: #ccc;
+    color: #fff; /* White */
 }
 
 /* Button styles */
@@ -115,7 +115,7 @@ body {
 
 .btn-play {
     background-color: #00cccc; /* Cyan */
-    color: #fff;
+    color: #fff; /* White */
     border: none;
 }
 
@@ -126,7 +126,7 @@ body {
 /* Chatbox styles */
 .chatbox {
     background-color: #444;
-    color: #fff;
+    color: #ccc; /* Cyan */
     padding: 20px;
     border-radius: 5px;
 }
@@ -134,15 +134,15 @@ body {
 /* Responsive styles */
 @media (max-width: 767px) {
     .navbar-toggler {
-        color: #fff;
-        border-color: #fff;
+        color: #ccc; /* Cyan */
+        border-color: #ccc; /* Cyan */
     }
 
     .navbar-toggler:hover {
-        color: #ccc;
+        color: #fff; /* White */
     }
 
     .nav-link {
-        color: #fff !important;
+        color: #ccc !important; /* Cyan */
     }
 }
