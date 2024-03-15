@@ -1,0 +1,27 @@
+/* Add this CSS to your existing CSS file or create a new one */
+header {
+  background-color: #87CEFA; /* Light blue */
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+  border-radius: 50%; /* To make the logo circular */
+}
+
+header h1 {
+  margin-top: 10px;
+}
+
+/* Styling for the "PvP Community" text */
+header h1.pvp-community {
+  color: #FFD700; /* Yellow */
+  background: linear-gradient(45deg, #FFD700, #00FFFF); /* Yellow to Cyan gradient */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+  display: inline-block;
+  padding: 10px 20px; /* Add padding around the text */
+  border: 2px solid #00FFFF; /* Cyan border */
+}
