@@ -114,13 +114,13 @@ body {
 }
 
 .btn-play {
-    background-color: #009688;
+    background-color: #00cccc; /* Cyan */
     color: #fff;
     border: none;
 }
 
 .btn-play:hover {
-    background-color: #00796b;
+    background-color: #00a6a6; /* Darker cyan */
 }
 
 /* Chatbox styles */
