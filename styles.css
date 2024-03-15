@@ -1,27 +1,99 @@
-/* Add this CSS to your existing CSS file or create a new one */
-header {
-  background-color: #87CEFA; /* Light blue */
-  padding: 20px;
-  text-align: center;
-}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=1, width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="./logo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<base href="/">
+<title>PvP Community</title>
+<style>
+  header {
+    background-color: #87CEFA; /* Light blue */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Add position relative for absolute positioning of the animated box */
+  }
 
-header img {
-  width: 100px; /* Adjust the size as needed */
-  height: auto;
-  border-radius: 50%; /* To make the logo circular */
-}
+  header img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%; /* To make the logo circular */
+  }
 
-header h1 {
-  margin-top: 10px;
-}
+  header h1 {
+    margin-top: 10px;
+    color: #333; /* Darker text color */
+    display: inline-block;
+    padding: 10px 20px; /* Add padding around the text */
+    background: linear-gradient(45deg, #00FFFF, #FFD700); /* Cyan to Yellow gradient */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+    position: relative; /* Add position relative for absolute positioning of the animated box */
+    z-index: 2; /* Ensure the text stays above the animated box */
+    animation: pulse 2s infinite; /* Add pulse animation */
+  }
 
-/* Styling for the "PvP Community" text */
-header h1.pvp-community {
-  color: #FFD700; /* Yellow */
-  background: linear-gradient(45deg, #FFD700, #00FFFF); /* Yellow to Cyan gradient */
-  -webkit-background-clip: text; /* Clip the background to the text */
-  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
-  display: inline-block;
-  padding: 10px 20px; /* Add padding around the text */
-  border: 2px solid #00FFFF; /* Cyan border */
-}
+  /* Animated box */
+  header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #00FFFF, #FFD700); /* Cyan to Yellow gradient */
+    border-radius: 10px; /* Rounded corners */
+    z-index: 1; /* Ensure the box stays below the text */
+    animation: pulse 2s infinite; /* Add pulse animation */
+  }
+
+  /* Pulse animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+
+  /* Main content styles */
+  main {
+    text-align: center;
+    padding: 50px;
+    color: #333; /* Darker text color */
+  }
+
+  .discord-button {
+    display: inline-block;
+    background-color: #7289DA; /* Discord color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .discord-button:hover {
+    background-color: #677BC4; /* Darker Discord color on hover */
+  }
+</style>
+</head>
+<body>
+<header>
+  <img src="https://cdn.discordapp.com/attachments/1199074761427398757/1218214520070340638/channels4_profile.jpg?ex=6606d9ae&is=65f464ae&hm=f4ce4f9b278b0525568a8812afe58d80b84ab0dcf30147d4dd15ec70a83679b0&" alt="PvP Community Logo">
+  <h1>PvP Community</h1>
+</header>
+<main>
+  <p>Welcome to the PvP Community! Join our Discord server to connect with other players:</p>
+  <a href="https://discord.gg/tiertests" class="discord-button">Join Discord</a>
+</main>
+</body>
+</html>
