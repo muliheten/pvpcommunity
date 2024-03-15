@@ -33,39 +33,19 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .navbar a {
             color: cyan; /* Cyan */
             text-decoration: none;
-            margin: 0 20px;
             transition: color 0.3s;
         }
 
         .navbar a:hover {
             color: #28a745; /* Green */
-        }
-
-        .color-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(30, 30, 30, 0.8);
-            z-index: 1000;
-            display: none;
-        }
-
-        .header {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            height: 80px;
-            background: linear-gradient(to bottom, #000, #111);
-            border-bottom: 1px solid #333;
-            z-index: 1001;
         }
 
         .icon {
@@ -121,6 +101,7 @@
 </head>
 <body>
     <nav class="navbar">
+        <div style="margin-left: 5cm;"></div>
         <a href="#tierlists" class="boxed">Tierlists</a>
         <a href="#discord" class="boxed">Discord</a>
         <div class="icon">
