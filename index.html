@@ -33,9 +33,6 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             margin-bottom: 20px;
-            display: flex;
-            align-items: center; /* Align items vertically */
-            justify-content: space-between; /* Spread items horizontally */
         }
 
         .navbar a {
@@ -43,26 +40,10 @@
             text-decoration: none;
             margin: 0 20px;
             transition: color 0.3s;
-            padding: 10px 20px; /* Added padding */
-            border-radius: 8px; /* Added border radius */
-            border: 2px solid transparent; /* Added border */
-            font-weight: bold; /* Added bold font */
         }
 
         .navbar a:hover {
             color: #28a745; /* Green */
-            background-color: cyan; /* Cyan */
-            border-color: cyan; /* Cyan */
-        }
-
-        .navbar-logo {
-            margin-left: auto; /* Push the logo to the right */
-            margin-right: 20px; /* Add right margin to the logo */
-        }
-
-        .navbar-logo img {
-            max-height: 40px;
-            border-radius: 50%;
         }
 
         .color-overlay {
@@ -124,24 +105,6 @@
             text-align: center;
         }
 
-        .footer a {
-            color: cyan; /* Cyan */
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-
-        .footer a:hover {
-            color: #28a745; /* Green */
-        }
-
-        /* Added styles for box and bold text */
-        .navbar a.boxed {
-            font-weight: bold;
-            border: 2px solid cyan; /* Cyan */
-        }
-
-        /* Added banner background */
         .banner {
             background-image: url('https://media.discordapp.net/attachments/987381476150632478/1203497557809045574/bannerrr.jpg?ex=65ff73f1&is=65ecfef1&hm=9949301970f1b249f746437dabbe307f0ce8c9bb4b4e4746c0304f081ef66b00');
             background-size: cover;
@@ -149,6 +112,52 @@
             border-radius: 8px;
             margin-top: 20px;
             padding: 50px; /* Adjust padding as needed */
+        }
+
+        .banner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-text {
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .boxed {
+            border: 2px solid cyan; /* Cyan */
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .boxed:hover {
+            background-color: cyan; /* Cyan */
+            color: #1e1e1e;
+        }
+
+        .navbar-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1001;
         }
     </style>
 </head>
@@ -158,10 +167,10 @@
         <a href="#tierlists" class="boxed">Tierlists</a>
         <a href="#staff" class="boxed">Staff Team</a>
         <a href="#socials">Socials</a>
-        <div class="navbar-logo">
-            <img src="https://cdn.discordapp.com/attachments/1199074761427398757/1218214520070340638/channels4_profile.jpg?ex=6606d9ae&is=65f464ae&hm=f4ce4f9b278b0525568a8812afe58d80b84ab0dcf30147d4dd15ec70a83679b0" alt="PvP Community Logo">
-        </div>
     </nav>
+    <div class="navbar-logo">
+        <img src="https://cdn.discordapp.com/attachments/1199074761427398757/1218214520070340638/channels4_profile.jpg?ex=6606d9ae&is=65f464ae&hm=f4ce4f9b278b0525568a8812afe58d80b84ab0dcf30147d4dd15ec70a83679b0" alt="PvP Community Logo">
+    </div>
     <div class="color-overlay"></div>
     <div class="header" id="header-pjs" style="opacity: 0.6; z-index: 10"></div>
     <div class="icon">
@@ -179,10 +188,10 @@
                 <a class="nav-link nav-link-active" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#tierlists">Tierlists</a>
+                <a class="nav-link boxed" href="#tierlists">Tierlists</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#staff">Staff Team</a>
+                <a class="nav-link boxed" href="#staff">Staff Team</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#socials">Socials</a>
@@ -190,9 +199,10 @@
         </ul>
     </div>
     <div class="container">
-        <div class="banner"></div>
-        <div class="alert alert-danger" id="ie-message">
-            IE not supported
+        <div class="banner-container">
+            <div class="banner-overlay">
+                <div class="banner-text">Welcome to PvP Community Official Site</div>
+            </div>
         </div>
     </div>
     <div class="footer">
