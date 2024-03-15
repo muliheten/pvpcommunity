@@ -1,60 +1,123 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="dark">
+<html lang="en">
 <head>
-    <script src="js/core-mod.min.js"></script>
-    <title>PvP Community Offical Site &bull; Home</title>
-    <meta name="title" content="PvP Community Offical Site &bull; Home">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1199074761427398757/1218214520070340638/channels4_profile.jpg?ex=6606d9ae&is=65f464ae&hm=f4ce4f9b278b0525568a8812afe58d80b84ab0dcf30147d4dd15ec70a83679b0&" type="image/png">
+    <title>PvP Community Offical Site &bull; Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"href="/css/app-wa-8c8d788ad0ee06dbc9619ff907c22651.css?vsn=d">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: cyan; /* Cyan */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar {
+            background-color: #2b2b2b; /* Dark Gray */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            color: cyan; /* Cyan */
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #28a745; /* Green */
+        }
+
+        .color-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(30, 30, 30, 0.8);
+            z-index: 1000;
+            display: none;
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 80px;
+            background: linear-gradient(to bottom, #000, #111);
+            border-bottom: 1px solid #333;
+            z-index: 1001;
+        }
+
+        .icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1002;
+        }
+
+        .icon img {
+            max-height: 40px;
+            border-radius: 50%;
+        }
+
+        .coldfire-navbar-menu {
+            position: fixed;
+            top: 100px;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background: #2b2b2b;
+            z-index: 1001;
+            transition: left 0.3s;
+            overflow-y: auto;
+            padding-top: 20px;
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #1e1e1e;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-theme navbar-double navbar-top-new">
-        <div class="container">
-            <button class="navbar-toggler nav-link" type="button"><i class="fa-regular fa-bars-filter"></i> Menu</button>
-            <div class="status-icon" onclick="copyToClipboard('#ip')">
-                <svg class="creeper" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4,2H20A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V4A2,2 0 0,1 4,2M6,6V10H10V12H8V18H10V16H14V18H16V12H14V10H18V6H14V10H10V6H6Z">
-                    </path>
-                </svg>
-            </div>
-            <a href="https://dsc.gg/PvP Community" target="_blank">
-                <div class="discord-icon">
-                    <svg class="discord" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 245 240">
-                        <path class="st0" d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z">
-                        </path>
-                        <path class="st0" d="M189.5 20h-134C44.2 20 35 29.2 35 40.6v135.2c0 11.4 9.2 20.6 20.5 20.6h113.4l-5.3-18.5 12.8 11.9 12.1 11.2 21.5 19V40.6c0-11.4-9.2-20.6-20.5-20.6zm-38.6 130.6s-3.6-4.3-6.6-8.1c13.1-3.7 18.1-11.9 18.1-11.9-4.1 2.7-8 4.6-11.5 5.9-5 2.1-9.8 3.5-14.5 4.3-9.6 1.8-18.4 1.3-25.9-.1-5.7-1.1-10.6-2.7-14.7-4.3-2.3-.9-4.8-2-7.3-3.4-.3-.2-.6-.3-.9-.5-.2-.1-.3-.2-.4-.3-1.8-1-2.8-1.7-2.8-1.7s4.8 8 17.5 11.8c-3 3.8-6.7 8.3-6.7 8.3-22.1-.7-30.5-15.2-30.5-15.2 0-32.2 14.4-58.3 14.4-58.3 14.4-10.8 28.1-10.5 28.1-10.5l1 1.2c-18 5.2-26.3 13.1-26.3 13.1s2.2-1.2 5.9-2.9c10.7-4.7 19.2-6 22.7-6.3.6-.1 1.1-.2 1.7-.2 6.1-.8 13-1 20.2-.2 9.5 1.1 19.7 3.9 30.1 9.6 0 0-7.9-7.5-24.9-12.7l1.4-1.6s13.7-.3 28.1 10.5c0 0 14.4 26.1 14.4 58.3 0 0-8.5 14.5-30.6 15.2z">
-                        </path>
-                    </svg>
-                </div>
-            </a>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-active" href="index.html"> Home</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#tierlists">Tierlists</a>
+        <a href="#staff">Staff Team</a>
+        <a href="#socials">Socials</a>
     </nav>
-    <div class="color-overlay">
-        <div class="header" id="header-pjs" style="opacity: 0.6; z-index: 10"></div>
-    </div>
-        </div>
-                <div class="icon">
-                    <div class="icon-wrapper">
-                        <img src="https://cdn.discordapp.com/attachments/1199074761427398757/1218214520070340638/channels4_profile.jpg?ex=6606d9ae&is=65f464ae&hm=f4ce4f9b278b0525568a8812afe58d80b84ab0dcf30147d4dd15ec70a" alt="PvP Community Logo">
-                    </div>
-                </div>
-            </div>
+    <div class="color-overlay"></div>
+    <div class="header" id="header-pjs" style="opacity: 0.6; z-index: 10"></div>
+    <div class="icon">
+        <div class="icon-wrapper">
+            <img src="https://cdn.discordapp.com/attachments/1199074761427398757/1218214520070340638/channels4_profile.jpg?ex=6606d9ae&is=65f464ae&hm=f4ce4f9b278b0525568a8812afe58d80b84ab0dcf30147d4dd15ec70a" alt="PvP Community Logo">
         </div>
     </div>
     <div class="coldfire-navbar-menu">
@@ -64,62 +127,26 @@
         </div>
         <ul>
             <li class="nav-item">
-                <a class="nav-link nav-link-active" href="index.html">
-                Home</a>
+                <a class="nav-link nav-link-active" href="#">Home</a>
             </li>
-            <div class="divider"></div>
-            <!-- Removed Minecraft Server related, Shop, store, features, perks -->
+            <li class="nav-item">
+                <a class="nav-link" href="#tierlists">Tierlists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#staff">Staff Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#socials">Socials</a>
+            </li>
         </ul>
     </div>
-    <div class="overlay"></div>
-    <div class="container top-container">
-        <div class="row">
-            <div class="col-lg-9">
-                <div class="card mb-2 welcome-card">
-                    <div class="card-body">
-                        <div class="welcome-card-flex">
-                            <div class="welcome-av-col">
-                            </div>
-                            <div class="welcome-text-col">
-                                <span class="welcome-text-col">PvP Community tier tests, check your skills and improve!</span><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <h1>PvP Community Offical Site</h1>
         <div class="alert alert-danger" id="ie-message">
             IE not supported
         </div>
-        <div class="chatbox mb-3" id="chatbox-top"></div>
     </div>
-
-    <div class="container">
-        <div class="post-list mb-4">
-            <div class="post-card-large">
-                <div class="post-card-img">
-                </div>
-                <div class="post-card-body">
-                    <div class="post-card-title">Welcome to PvP Community!</div>
-                    <div class="post-card-content">Nice to see you!
-                        PvP Community Tiers List!
-                    </div>
-                    <div class="post-card-footer">
-                        <div class="full-post-info ml-3 flex-grow-1 mr-3">
-                            <div class="full-post-author">Canadiansweat</div>
-                            <div>make sure to join discord!</div>
-                        </div>
-                        <div class="readtime">1 minute read</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="chatbox" id="chatbox-bottom"></div>
-    </div>
-    <div class="footer-spacer"></div>
-    <div class="footer large-footer">
+    <div class="footer">
         <div class="top-section">
             <div class="container">
                 <div class="row">
@@ -132,17 +159,33 @@
                         <div class="footer-text-header">Links</div>
                         <a class="footer-link terms-link" href="terms.html#Terms_andContitions_scroll">Terms and Conditions</a>
                         <a class="footer-link privacy-policy-link" href="terms.html#Privicy_policy_scroll">Privacy Policy</a>
-                        <a class="footer-link" href="terms.html#Cookies_Scroll">Cookie Notice</a>                  
+                        <a class="footer-link contact-link" href="terms.html#Contact_us_scroll">Contact Us</a>
+                        <a class="footer-link" href="#staff">Staff</a>
+                        <a class="footer-link" href="#socials">Socials</a>
+                    </div>
+                    <div class="col-lg-4 footer-col">
+                        <div class="footer-text-header">Social</div>
+                        <a class="footer-social-link" href="https://twitter.com/TierTestss" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="footer-social-link" href="https://discord.gg/NvGtXumZjd" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        <a class="footer-social-link" href="https://twitch.tv/tiertests" target="_blank"><i class="fa-brands fa-twitch"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-<script type="text/javascript" src="js/dist-jquery.min.js"></script>
-<script type="text/javascript" src="js/js-spoiler.js"></script>
-<script type="text/javascript" src="js/jquery.cookie-jquery.cookie.js"></script>
-<script type="text/javascript" src="js/js-bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWmWsDI7F/" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/js-aos.js"></script>
-<script type="text/javascript" src="js/js-copytoclipboard.js"></script>
-<script type="text/javascript" src="js/js-custom.js"></script>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+I5Rp+r1ot73v8ZHNmOe4K/dS+8eztOjc/NQT41" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-5ZYgaAVvAx5g4AyAsFxH8n+eVPrfiuKZZ+vxgVZZ15pYOdpJ5OxZeCx7Q3q1J9w/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-3s71oNxMh0TOQGd5WBQMB3jVgH28PXLwrE0yBJHoYJRXGDruDjUU3wq+O0UaOr0H" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        $("#nav-header-close").click(function () {
+            $(".coldfire-navbar-menu").css("left", "-300px");
+            $(".color-overlay").css("display", "none");
+        });
+    </script>
 </body>
 </html>
