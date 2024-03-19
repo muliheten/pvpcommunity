@@ -60,20 +60,6 @@
             border-radius: 50%; /* Circular */
         }
 
-        .coldfire-navbar-menu {
-            position: fixed;
-            top: 100px;
-            left: -300px;
-            width: 300px;
-            height: 100%;
-            background: #2b2b2b;
-            z-index: 1001;
-            transition: left 0.3s;
-            overflow-y: auto;
-            padding-top: 20px;
-            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
-        }
-
         .footer {
             position: fixed;
             bottom: 0;
@@ -115,22 +101,12 @@
             <img src="https://cdn.discordapp.com/attachments/1199074761427398757/1218214520070340638/channels4_profile.jpg?ex=6606d9ae&is=65f464ae&hm=f4ce4f9b278b0525568a8812afe58d80b84ab0dcf30147d4dd15ec70a83679b0" alt="PvP Community Logo">
         </div>
     </div>
-    <div class="coldfire-navbar-menu">
-        <div class="nav-header">
-            <div class="nav-header-text theme-text">PvP Community</div>
-            <div id="nav-header-close" class="nav-header-close btn btn-secondary ml-4"><i class="fa-solid fa-xmark"></i></div>
-        </div>
-        <ul>
-            <li class="nav-item">
-                <a class="nav-link nav-link-active" href="#">Tierlists</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link boxed" href="#tierlists">Discord</a>
-            </li>
-        </ul>
-    </div>
     <div class="container">
-        <!-- Removed banner -->
+        <div class="text-center">
+            <h2>PvPCommunity Tiertests</h2>
+            <p>Tests completed: [display count]</p>
+            <a href="tierlists.html" class="btn btn-primary">Click for Tierlist</a>
+        </div>
     </div>
     <div class="footer">
         <div class="top-section">
@@ -155,11 +131,6 @@
     <script>
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
-        });
-
-        $("#nav-header-close").click(function () {
-            $(".coldfire-navbar-menu").css("left", "-300px");
-            $(".color-overlay").css("display", "none");
         });
     </script>
 </body>
